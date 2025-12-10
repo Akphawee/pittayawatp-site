@@ -7,7 +7,7 @@
     </button>
 
     <!-- (logo + name) -->
-    <a href="Home.html" class="brand" aria-label="Go to Home">
+    <a href="index.html" class="brand" aria-label="Go to Home">
       <img src="e9c2928eb9e52ba802cf1927802e44c9.jpg" alt="Logo" class="brand-logo">
       <span class="brand-name">Pittayawat Pittayaporn</span>
     </a>
@@ -15,7 +15,7 @@
     <!-- Desktop nav (right) -->
     <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
       <ul>
-        <li><a href="Home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="Ongoing%20Projects.html">Research Project</a></li>
         <li><a href="Publications.html">Publications</a></li>
         <li><a href="Teaching.html">Teaching</a></li>
@@ -34,7 +34,7 @@
     </div>
     <nav class="drawer-nav" role="navigation" aria-label="Mobile primary">
       <ul>
-        <li><a href="Home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="Ongoing%20Projects.html">Ongoing Projects</a></li>
         <li><a href="Publications.html">Publications</a></li>
         <li><a href="Teaching.html">Teaching</a></li>
@@ -210,7 +210,7 @@ body { padding-top: var(--header-height); margin:0; }
 
   // highlight active links
   try {
-    const current = location.pathname.split('/').pop() || 'Home.html';
+    const current = location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.primary-nav a, .drawer-nav a').forEach(a=>{
       const href = a.getAttribute('href') || '';
       if(href === current || decodeURIComponent(href) === current){
